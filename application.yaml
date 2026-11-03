@@ -8,8 +8,8 @@ metadata:
 spec:
   project: default
   source:
-    path: HelmCharts/Chart1 
-    repoURL: 
+    path: hello-app/
+    repoURL: git@github.com:SeliverstovaKaryna/argocd_echo_server.git
     targetRevision: HEAD
   destination:
     name: in-cluster
