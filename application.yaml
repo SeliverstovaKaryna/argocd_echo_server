@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: echo-server
+  namespace: argocd
+  finalizer:
+    - reaources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    path: HelmCharts/Chart1 
+    repoURL: 
+    targetRevision: HEAD
+  destination:
+    name: in-cluster
+    namespace: hello
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
