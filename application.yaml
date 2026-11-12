@@ -4,7 +4,7 @@ metadata:
   name: echo-server
   namespace: "argocd2"
   finalizers:
-    - reaources-finalizer.argocd.argoproj.io
+    - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
