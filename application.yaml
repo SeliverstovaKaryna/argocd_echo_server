@@ -9,7 +9,7 @@ spec:
   project: echo-server
   source:
     path: HelmCharts/Chart1/echo-server
-    repoURL: git@github.com:SeliverstovaKaryna/argocd_echo_server.git
+    repoURL: https://github.com/SeliverstovaKaryna/argocd_echo_server.git
     targetRevision: HEAD
   destination:
     name: in-cluster
