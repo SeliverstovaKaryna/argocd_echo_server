@@ -16,3 +16,5 @@ kubeconfig.yaml
 
 !keys/.gitkeep
 keys/
+argocd-linux-amd64
+argocd-linux-amd64
