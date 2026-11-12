@@ -2,13 +2,13 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: echo-server
-  namespace: argocd
-  finalizer:
+  namespace: argocd2
+  finalizers:
     - reaources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    path: hello-app/
+    path: HelmCharts/Chart1/echo-server
     repoURL: git@github.com:SeliverstovaKaryna/argocd_echo_server.git
     targetRevision: HEAD
   destination:
